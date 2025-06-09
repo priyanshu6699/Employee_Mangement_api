@@ -2,7 +2,7 @@
 #
 # Build stage
 #
-FROM maven:3.6.0-jdk-11-slim AS build
+FROM maven:3.9.9-jdk-24 AS build
 RUN ls -al
 COPY src /home/app/src
 COPY pom.xml /home/app
